@@ -31,7 +31,7 @@ services:
         
         
   db:
-    container_name: "db-prelive"
+    container_name: "db-scloud"
     image: "mysql:5.7"
     environment:
       - MYSQL_DATABASE=telecloud
@@ -48,7 +48,7 @@ services:
         ipv4_address: 172.20.0.2
 
   backup:
-    container_name: "pl-backup"
+    container_name: "s-backup"
     image: databack/mysql-backup
     restart: always
     user: "0"
